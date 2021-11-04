@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>Prince Tranport</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-sticky sticky-top">
+    <img class="mb-4 mt-3" [src]="myimage" alt="" width="70" height="30">
+    <a class="navbar-brand ml-2 pt-2" href="/">Prince Tranport</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="container alige-center">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item active pl-5 ml-4">
+            <a class="nav-link abc" font-family = "'Courier New', Courier, monospace" routerLink="/">Home</a>
+          </li>
+          <li class="nav-item pl-5 ml-4">
+            <a class="nav-link abc" font-family = "'Courier New', Courier, monospace" routerLink="/map">Map</a>
+          </li>
+          <li class="nav-item pl-5 ml-4">
+            <a class="nav-link abc" font-family = "'Courier New', Courier, monospace" routerLink="/product">Product</a>
+          </li>
+          <li class="nav-item pl-5 ml-4">
+            <a class="nav-link abc" font-family = "'Courier New', Courier, monospace" routerLink="/table">table</a>
+          </li>
+          <li class="nav-item pl-5 ml-4">
+            <a class="nav-link abc" font-family = "'Courier New', Courier, monospace" routerLink="/traffic">About traffic rule</a>
+          </li>
+          <li class="nav-item pl-5 ml-4">
+            <a class="nav-link abc" font-family = "'Courier New', Courier, monospace" routerLink="/contact">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
+ 
+<div>
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,96 @@
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">Prince Tranportation</h1>
+        <p>Prince Transportion use to help the driver. To get looding and unlooding any where in india. distributer can also track the product and driver, we delivery th product any where in india..</p>
+        <p><a class="btn btn-primary btn-lg" href="/" role="button">Home  »</a></p>
+    </div>
+</div>
+
+
+<div *ngIf = "alert" class="alert alert-success p-0 m-0" role="alert">
+    Details Added Successfully
+</div>
+<h1 class="text-center"><b><font size="15">Product Detail</font></b></h1>
+<div class="container">
+    <form (ngSubmit) = "onSubmit()">
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="exampleInputtext">Pickup</label>
+                    <input [(ngModel)]="pickup" type="text" name="pickup" class="form-control" id="exampleInputtext" aria-describedby="textHelp">
+                    <small id="emailHelp" class="form-text text-muted">Pickup</small>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="exampleInputText">Distination</label>
+                    <input [(ngModel)]="distination" type="text" name="distination" class="form-control" id="exampleInputText">
+                    <small id="emailHelp" class="form-text text-muted">Destinaton point</small>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="exampleInputText">Company Name</label>
+                    <input [(ngModel)]="company" type="text" name="company" class="form-control" id="exampleInputEmail1" aria-describedby="text">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="exampleInputText">Which Type Of Product</label>
+                    <input [(ngModel)]="type" type="text" name="type" class="form-control" id="exampleInputText" aria-describedby="textHelp">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="exampleInputText">How Much Quantity</label>
+                    <input type="text" [(ngModel)]="quantity" name="quantity" class="form-control" id="exampleInputText">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="inputState">Types Of Vahical</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>Truck</option>
+                  <option>Echer</option>
+                  <option>Trackor</option>
+                  <option>Tractor-trailer</option>
+                  <option>Tranportor-Car</option>
+                  <option>Tanker</option>
+                  <option>Flat bed Truck</option>
+                </select>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="exampleInputText">Price</label>
+                    <input type="text"[(ngModel)]="price" name="price" class="form-control" id="exampleInputText">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="exampleInputText">Company Email</label>
+                    <input [(ngModel)]="email" type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="text">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="exampleInputText">Company phone</label>
+                    <input [(ngModel)]="phone" type="text" name="phone" class="form-control" id="exampleInputEmail1" aria-describedby="text">
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <!-- <div>{{greeting}}</div> -->
+    </form>
+</div>
+
+

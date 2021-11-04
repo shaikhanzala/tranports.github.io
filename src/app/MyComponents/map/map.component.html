@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    </style>
+    <title>Map</title>
+</head>
+
+<body>
+    <h2>Map</h2>
+    <div class="container">
+        <input type="text" name="start" id="start" placeholder="Your location..."><br><br>
+        <input type="text" name="start" id="start" placeholder="Destination Point..."><br><br>
+        <button type="submit">Submit</button><br>
+    </div>
+
+    <div id='map' style='width:auto; height: 800px; z-index: -1;' class="mb-5"></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiaGFuc2FtOTk4OSIsImEiOiJjazh0dGRkOTAwMGpuM2trYzRlazhsNTdtIn0.QiiVZr8_N9tAwoeBx6ybbA';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [78.53333, 19.66667],
+            zoom: 9,
+            bearing: 100
+        });
+    </script>
+</body>
+
+</html>

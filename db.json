@@ -1,0 +1,38 @@
+{
+  "contact": [
+    {
+      "name": "hanzala",
+      "email": "hanzala@gmail.com",
+      "phone": "9989741235",
+      "desc": "hanzala is good",
+      "id": 1
+    },
+    {
+      "name": "Abhinav ",
+      "email": "Abhinav@gmail.com",
+      "phone": "9989456826",
+      "desc": "nice website ",
+      "id": 2
+    },
+    {
+      "name": "Shaik Moukhil  ",
+      "email": "Shaikmoukhil@gmail.com",
+      "phone": "8856234712",
+      "desc": "this is a good website ",
+      "id": 3
+    }
+  ],
+  "product": [
+    {
+      "pickup": "Haryana",
+      "distination": "Puna",
+      "company": "transport ",
+      "type": "pasersal",
+      "price": "5000",
+      "quantity": "50",
+      "email": "Transport@gmail.com",
+      "phone": "6635758468",
+      "id": 1
+    }
+  ]
+}
